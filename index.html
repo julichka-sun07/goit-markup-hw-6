@@ -386,15 +386,22 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
               </a>
             </li>
           </ul>
-        </div>   
       </div>
-        <div class="podpiska">
+      <div class="podpiska">
             <form>
               <label for="user-one" class="blok-podpeska"> Підпишіться на розсилку </label>
-              <input type="text" id="user-one" name="" >
-              <button type="button"> Підписатися </button>
+                <div class="btn-podpeska">
+                  <input type="email" id="user-one" name="email" class="email-podpeska" placeholder="E-mail" >
+                  <button type="button" class="button-podpeska"> Підписатися 
+                    <svg class="icon-podpeska"  width="24" height="24">
+                      <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </div>
             </form>
-        </div>     
+        </div>        
+      </div>
+        
     </div> 
   </footer>
       <div class="backdrop is-hidden" data-modal>
@@ -441,12 +448,11 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
               </label>
               <div>
                   <label for="user-text" class="form-text"> Коментар </label>
-                    <textarea 
+                  <textarea 
                     name="user-text" 
                     id="user-text" 
                     class="forma-rozmir"
-                    placeholder="Введіть текст">
-                  </textarea>
+                    placeholder="Введіть текст"></textarea>
               </div>
               <div class="modal-field">
                 <input type="checkbox" 
@@ -461,10 +467,11 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                             <use href="./img/symbol-defs.svg#icon-check"></use>
                           </svg>
                        </span>   
-                       Погоджуюся з розсилкою та приймаю  Умови договору
+                       Погоджуюся з розсилкою та приймаю 
+                       <a href="" class="nav-link-forma"> Умови договору</a> 
                 </label>
               </div>
-                <button type="submit " class="modal-button mod-tex"> Відправити </button>
+                <button type="submit" class="modal-button mod-tex"> Відправити </button>
             </form>
         </div>
       </div>
